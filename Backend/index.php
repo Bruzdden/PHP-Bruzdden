@@ -23,17 +23,21 @@ $result = $db->getFilmsAndActors();
 </head>
 <body>
     <h1>Filmy</h1>
-    <ul>
+    <table>
+    <tr>
         <?php foreach ($result["film"] as $film ) { ?>
-            <li><?php echo $film["jmeno"] . " " . $db->Select($film["Herec_idHerec"]); ?></li>
+            <td><?php echo $film["jmeno"] . " " . $db->Select($film["Herec_idHerec"]); ?></td><br/>
         <?php } ?>
-    </ul>
+    </tr>
+    </table>
     <h1>Herci</h1>
-    <ul>
+    <table>
+    <tr>
         <?php foreach ($result["herec"] as $herec) { ?>
-            <li><?php echo $herec["jmeno"] . " " . $herec["prijmeni"]; ?></li>
+            <td><?php echo $herec["jmeno"] . " " . $herec["prijmeni"]; ?></td><br/>
         <?php } ?>
-    </ul>
+    </tr>
+    </table>
 
 <h1>Přidat film</h1>
 <form method="post">
