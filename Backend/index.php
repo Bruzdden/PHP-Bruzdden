@@ -25,17 +25,21 @@ $result = $db->getFilmsAndActors();
     <h1>Filmy</h1>
     <table>
     <tr>
+        <td>
         <?php foreach ($result["film"] as $film ) { ?>
-            <td><?php echo $film["jmeno"] . " " . $db->Select($film["Herec_idHerec"]); ?></td><br/>
+            <?php echo $film["jmeno"] . " " . $db->Select($film["Herec_idHerec"]); ?>
         <?php } ?>
+        </td><br/>
     </tr>
     </table>
     <h1>Herci</h1>
     <table>
     <tr>
+        <td>
         <?php foreach ($result["herec"] as $herec) { ?>
-            <td><?php echo $herec["jmeno"] . " " . $herec["prijmeni"]; ?></td><br/>
+            <?php echo $herec["jmeno"] . " " . $herec["prijmeni"]; ?>
         <?php } ?>
+        </td><br/>
     </tr>
     </table>
 
