@@ -7,3 +7,7 @@ Ukázka webu:
 
 Mobilní verze:
 ![image](https://user-images.githubusercontent.com/76947123/236140928-e630ae08-d168-476c-95e2-85a59690ff07.png)
+
+
+
+Na lighthouse nemam chrome
