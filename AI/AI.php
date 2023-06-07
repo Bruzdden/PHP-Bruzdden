@@ -54,5 +54,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <input type="text" name="color3" required>
     <span></span>
     <label for="color3">B from RGB</label>
-    <input type="submit" value="submit" class="submit-btn">
+    <input type="submit" value="submit">
 </form>
